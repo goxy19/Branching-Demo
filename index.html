@@ -14,6 +14,33 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus possimus, adipisci dolorum beatae tempora,
             doloribus suscipit reprehenderit molestiae, nostrum aperiam sed est repellat nihil architecto unde amet
             autem. Commodi, ullam?</p>
+        <form action="/obrada-podataka" method="POST">
+    <div>
+        <label for="ime">Ime i prezime:</label>
+        <input type="text" id="ime" name="ime" placeholder="Unesite vaše ime" required>
+    </div>
+
+    <div>
+        <label for="email">Email adresa:</label>
+        <input type="email" id="email" name="email" placeholder="primer@mail.com" required>
+    </div>
+
+    <div>
+        <label for="razlog">Razlog kontaktiranja:</label>
+        <select id="razlog" name="razlog">
+            <option value="pitanje">Opšte pitanje</option>
+            <option value="podrska">Tehnička podrška</option>
+            <option value="saradnja">Poslovna saradnja</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="poruka">Vaša poruka:</label>
+        <textarea id="poruka" name="poruka" rows="4" placeholder="Napišite vašu poruku ovde..."></textarea>
+    </div>
+
+    <button type="submit">Pošalji poruku</button>
+</form>
     </div>
 </body>
 
