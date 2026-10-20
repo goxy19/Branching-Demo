@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Towns Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Towns</h2>
+
+    <div class="main-container">
+        <!-- Boks sa listom gradova -->
+        <div class="box">
+            <div class="box-header">Towns</div>
+            <select id="towns" size="5">
+                <option value="Sofia">Sofia</option>
+                <option value="Plovdiv">Plovdiv</option>
+                <option value="Varna">Varna</option>
+                <option value="Bourgas">Bourgas</option>
+            </select>
+        </div>
+
+        <!-- Boks sa akcijama i poljima -->
+        <div class="box">
+            <div class="box-header">Manage Towns</div>
+            
+            <div class="input-group">
+                <input type="text" id="townName" placeholder="Unesite ime grada...">
+            </div>
+
+            <div class="button-group">
+                <!-- Editor uloga -->
+                <button id="btnAdd" class="btn btn-add" onclick="addTown()">Add</button>
+                <!-- Akcija brisanja -->
+                <button id="btnDelete" class="btn btn-delete" onclick="deleteTown()">Delete</button>
+                <!-- Shuffler uloga -->
+                <button id="btnShuffle" class="btn btn-shuffle" onclick="shuffleTowns()">Shuffle</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Prikaz poruka o akcijama -->
+    <div id="result" class="result-box">Ready.</div>
+
+    <script src="towns.js"></script>
+</body>
+</html>
